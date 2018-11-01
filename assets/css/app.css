@@ -1,0 +1,457 @@
+/* Globals */
+:root {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-weight: 400;
+  --color-secondary: #1d691e;
+  --color-link: #ff3348;
+
+  font-family: var(--font-sans);
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+  background-color: var(--color-secondary);
+	margin: 0;
+	padding: 130px 0 0;
+  text-align: center;
+}
+
+.ie body { 
+	background-color: #1d691e; 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: var(--color-link);
+}
+
+.clear {
+	clear: both;
+}
+
+.red {
+	color: var(--color-link);
+}
+
+.white {
+	color: #fff;
+}
+
+.content {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1256px;
+	padding: 0 15px;
+	text-align: left;
+}
+
+.content.main {
+	padding-bottom: 50px;
+}
+/* Global Header */
+.global-header {
+	background-color: #fff;
+	border-bottom: 1px solid #e6e6e6;
+	box-sizing: border-box;
+	color: var(--color-secondary);
+  padding-bottom: 15px;
+  padding-top:12px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+/* Logo Container */
+.logo-container {
+	float: left;
+	margin-right: 25px;
+	min-height: 80px;
+}
+
+/* Logo */
+.siteHeader-logo {
+  background: url(https://luna1.co/0fc2ef.png) no-repeat transparent 50%;
+  background-size: contain;
+  display: block;
+  height: 22px;
+  margin-top: 8px;
+  width: 112px;
+}
+
+.site-headline {
+	float: left;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1.2em;
+	margin: 0 auto 0 0;
+}
+
+/* Header Quote */
+.header-quote {
+	color: var(--color);
+  display: block;
+  font-family: var(--font-serif);
+  margin-bottom: 0;
+}
+
+.header-quote p {
+  margin-bottom: 3px;
+}
+
+/* Global Footer */
+.global-footer {
+	background-color: #fff;
+	border-top: 1px solid #e6e6e6;
+	bottom: 0;
+	clear: both;
+  color: var(--color);
+  font-family: var(--font-serif);
+  font-size: .85rem;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.intro {
+	max-width: 600px;
+}
+
+.text-input {
+	border-color: #ccc;
+}
+
+/* START FLEX LAYOUT */
+
+.dogpile {
+	display: flex;
+	flex-wrap: wrap;
+	/*justify-content: space-between; IS THIS DOING ANYTHING FOR ANY BROWSER? */
+	min-height: 300px;
+}
+
+.dog-module {
+	background-color: #fff;
+	border: 1px solid var(--color-secondary);
+	border-radius: 5px;
+	cursor: pointer;
+	flex: 0 0 240px;
+	font-size: 1.25rem;
+	list-style-type: none;
+	margin: 0 auto 9px auto;
+	overflow: hidden;
+	padding: 0 0 14px 0;
+	text-align: center;
+}
+
+.ie .dog-module {
+	float: left;
+	width: 240px;
+}
+
+/* END FLEX LAYOUT */
+
+/* START LOADING SPINNER */
+
+.spin-container {
+	clear: both;
+	text-align: center;
+	width: 100%;
+}
+
+.spinner {
+	animation: rotate 0.8s infinite linear;
+	border: 4px solid #ccc !important;
+	border-radius: 50%;
+	border-right-color: transparent !important;
+	height: 24px;
+	left: 49%;
+	margin: auto;
+	width: 24px; 	
+}
+
+@keyframes rotate {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+/* END LOADING SPINNER */
+
+
+.modal__content .dog-module {
+	border: none;
+	cursor: auto;
+	flex: none;
+}
+
+.modal__content .dog-image {
+	border-radius: 5px;
+}
+
+.cta {
+	background-color: #09f;
+	background-image: linear-gradient( to right bottom, #09f, #6cf );
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 32px;
+	text-decoration: none;
+}
+
+.name {
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.view-me-link {
+	background: transparent url(/webdev-take-home-exercise/assets/images/view-me-icon.gif) 0 2px no-repeat;
+	display: inline-block;
+	font-size: .9rem;
+	height: 35px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.global-footer p {
+	margin-bottom: 0;
+}
+
+.message {
+	padding: 0 45px;
+}
+
+/* PRESUMABLY ANYTHING NOT DESKTOP */
+@media only screen and (max-width: 1279px) {
+
+	body {
+		padding-top: 0;
+	}
+	
+	/* Global Header */
+	.global-header {
+		position: static;
+	}
+	
+	.logo-container {
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+	body {
+		padding-bottom: 0;
+	}
+	
+	.desktop-only {
+		display: none;
+	}
+	
+	/* Global Header */
+	.global-header {
+		background-image: none;
+		padding-right: 10px;
+	}
+	.content {
+		margin-left: 15px;
+		margin-right: 15px;
+		max-width: 100%;
+	}
+	
+	/* Logo Container */
+	.logo-container {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: auto;
+	}
+	
+	.site-headline {
+		float: none;
+		margin: 10px auto;
+	}
+	
+	/* Header Quote */
+	.header-quote {
+		margin: 0;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	.dog-module {
+		/* ANY CHANGES??? flex: 0 0 270px; */
+	}
+}
+
+/**** BEGIN MICROMODAL STYLES ****/
+
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 15px;
+  width: 600px;
+  max-width: 100%;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #00449e;
+  box-sizing: border-box;
+}
+
+.modal__close {
+  background: #fff;
+  border: 2px solid #333;
+  border-radius:16px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  float: right;
+  padding: 4px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  -webkit-appearance: none;
+  width: 32px;
+}
+
+.modal__close:focus{ outline: none; }
+
+.modal__header .modal__close:before { content: "\2715"; }
+
+.modal__content {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,.8);
+}
+
+.modal__btn {
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: #e6e6e6;
+  color: rgba(0,0,0,.8);
+  border-radius: .25rem;
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  text-transform: none;
+  overflow: visible;
+  line-height: 1.15;
+  margin: 0;
+  will-change: transform;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: -webkit-transform .25s ease-out;
+  transition: transform .25s ease-out;
+  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+}
+
+.modal__btn:focus, .modal__btn:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.modal__btn-primary {
+  background-color: #00449e;
+  color: #fff;
+}
+
+
+
+/**************************\
+  Demo Animation Style
+\**************************/
+@keyframes mmfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@keyframes mmfadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+
+@keyframes mmslideIn {
+  from { transform: translateY(15%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes mmslideOut {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10%); }
+}
+
+.micromodal-slide {
+  display: none;
+}
+
+.micromodal-slide.is-open {
+  display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+/**** END MICROMODAL STYLES ****/

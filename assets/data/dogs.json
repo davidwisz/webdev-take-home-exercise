@@ -1,78 +1,123 @@
 {
   "dogs": [
   {
-      "image": "/assets/images/raw/1.jpeg",
-      "source": "https://unsplash.com/photos/ybHtKz5He9Y"
+      "id": "1",
+      "image": "1.jpeg",
+      "name": "Muffy",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/2.jpeg",
-      "source": "https://unsplash.com/photos/rY79kwEEyGo"
+      "id": "2",
+      "image": "2.jpeg",
+      "name": "Buffy",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/3.jpeg",
-      "source": "https://unsplash.com/photos/ngqyo2AYYnE"
+      "id": "3",
+      "image": "3.jpeg",
+      "name": "Fluffy",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/4.jpeg",
-      "source": "https://unsplash.com/photos/9A64wd1QaAU"
+      "id": "4",
+      "image": "4.jpeg",
+      "name": "Scruffy",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/5.jpeg",
-      "source": "https://unsplash.com/photos/915UJQaxtrk"
+      "id": "5",
+      "image": "5.jpeg",
+      "name": "Wuffy",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/6.jpeg",
-      "source": "https://unsplash.com/photos/mx0DEnfYxic"
+      "id": "6",
+      "image": "6.jpeg",
+      "name": "Toughy",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/7.jpeg",
-      "source": "https://unsplash.com/photos/OsOQhAzcEKc"
+      "id": "7",
+      "image": "7.jpeg",
+      "name": "Chunky",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/8.jpeg",
-      "source": "https://unsplash.com/photos/6WneSv56YVI"
+      "id": "8",
+      "image": "8.jpeg",
+      "name": "Punky",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/9.jpeg",
-      "source": "https://unsplash.com/photos/CdVG9f96kyg"
+      "id": "9",
+      "image": "9.jpeg",
+      "name": "Monkey",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/10.jpeg",
-      "source": "https://unsplash.com/photos/bVA2DI7c9e8"
+      "id": "10",
+      "image": "10.jpeg",
+      "name": "Boomer",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/11.jpeg",
-      "source": "https://unsplash.com/photos/GvhSUEN-Lm8"
+      "id": "11",
+      "image": "11.jpeg",
+      "name": "Piper",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/12.jpeg",
-      "source": "https://unsplash.com/photos/t2XHKIdc4Kw"
+      "id": "12",
+      "image": "12.jpeg",
+      "name": "Buster",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/13.jpeg",
-      "source": "https://unsplash.com/photos/saRU3vzmgkY"
+      "id": "13",
+      "image": "13.jpeg",
+      "name": "Baxter",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/14.jpeg",
-      "source": "https://unsplash.com/photos/1z-kI6gIEpg"
+      "id": "14",
+      "image": "14.jpeg",
+      "name": "Chester",
+      "sex" : "Male",
+      "breed" : "Terrier Mix"
     },
 
     {
-      "image": "/assets/images/raw/15.jpeg",
-      "source": "https://unsplash.com/photos/zHZ2nTnBnAQ"
+      "id": "15",
+      "image": "15.jpeg",
+      "name": "Tiger",
+      "sex" : "Female",
+      "breed" : "Terrier Mix"
     }
   ]
 }
